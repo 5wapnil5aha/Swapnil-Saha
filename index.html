@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapnil Saha | Offensive Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <canvas id="matrixCanvas"></canvas>
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="page-shell">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <a class="brand" href="#hero">SYS://Swapnil</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Ops</a>
+        <a href="#experience">Timeline</a>
+        <a href="#contact">Access</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section id="hero" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">ACCESS GRANTED</p>
+          <h1 class="glitch" data-text="Swapnil Saha">Swapnil Saha</h1>
+
+          <p class="hero-subtitle">
+            <span class="prompt">&gt; </span>
+            <span id="typingText"></span>
+            <span class="cursor"></span>
+          </p>
+
+          <p class="hero-description">
+            Offensive Security Engineer specializing in Active Directory exploitation, SIEM engineering,
+            and custom malware/tooling development. I simulate real-world adversaries to break, understand,
+            and secure modern enterprise environments.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Establish Contact</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel terminal-panel">
+            <div class="panel-body">
+              <p><span class="panel-label">status:</span> VAPT|Red teaming|Blue teaming</p>
+              <p><span class="panel-label">focus:</span> Penetration Testing / malware dev</p>
+              <p><span class="panel-label">certs:</span> CRTP | CEH | CAP</p>
+              <p><span class="panel-label">mode:</span> assumed breach</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="section-heading">
+          <h2 class="glitch" data-text="About.exe">About.exe</h2>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-body">
+            <p class="terminal-line">
+              <span class="prompt">root@redteam:~$</span>
+              <span>
+                Security engineer with hands-on experience in both "Attack&Detect" Scenarios.
+                Executed lateral movement across multiple Windows systems using real-world attack chains.
+                Strong background in SIEM engineering, detection bypass techniques, and Malware development.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <h2 class="glitch" data-text="Skill Stack">Skill Stack</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <h3>Active Directory Attacks</h3>
+            <p>Kerberoasting, Pass-the-Hash, Lateral Movement, Privilege Escalation</p>
+            <div class="skill-bar"><span style="width: 95%"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Malware Development</h3>
+            <p>Custom loaders, API evasion, memory execution, C# & C payloads</p>
+            <div class="skill-bar"><span style="width: 92%"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>SIEM Engineering</h3>
+            <p>Log ingestion, detection rules, threat hunting, SOC workflows</p>
+            <div class="skill-bar"><span style="width: 90%"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Windows Internals</h3>
+            <p>Win32 APIs, process injection, memory structures, system behavior</p>
+            <div class="skill-bar"><span style="width: 88%"></span></div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <h2 class="glitch" data-text="Projects">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <h3>Custom PE Loader</h3>
+            <p>Built a custom loader with manual PE parsing, relocation handling, and in-memory execution.</p>
+          </article>
+
+          <article class="project-card">
+            <h3>ZigBack</h3>
+            <p>Built a zig based backdoor dynamically wrapped and compiled by Python undetected by the Microsoft defender</p>
+          </article>
+
+          <article class="project-card">
+            <h3>Stealth Keylogger</h3>
+            <p>Developed Win32 API-based keylogger with encrypted exfiltration and AV evasion techniques.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <h2 class="glitch" data-text="Timeline">Timeline</h2>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <div class="timeline-content">
+              <h3>Red Team Operations</h3>
+              <p>Executed AD attack chains across enterprise environments under assumed breach conditions.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">2025</span>
+            <div class="timeline-content">
+              <h3>Malware & Loader Development</h3>
+              <p>Developed custom payloads, loaders, and evasion techniques for Windows environments.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="section-heading">
+          <h2 class="glitch" data-text="Access">Access</h2>
+        </div>
+
+        <div class="contact-card">
+          <p>Interested in offensive security, red teaming, or advanced system exploitation? Let's connect.</p>
+
+          <div class="social-links">
+            <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn</a>
+            <a href="https://t.me/YOUR_USERNAME" target="_blank">Telegram</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
